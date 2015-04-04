@@ -1,0 +1,29 @@
+Clonar proyecto existente
+En consola ejecuta:  
+cd Desktop/	enter
+git clone https://github.com/sly019/II_proyectoWeb	enter
+
+
+
+
+
+
+
+Guardar los datos
+
+cd /Desktop/II_proyectoWeb
+git add -A
+git commit -m "COMENTARIO"
+
+git push -u origin master
+
+
+user: sly019
+pass: Universidad1
+
+
+
+
+//jalar las actualizaciones del otro
+cd /Desktop/II_proyectoWeb
+git pull
