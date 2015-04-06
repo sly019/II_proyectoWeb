@@ -1,4 +1,13 @@
 Rails.application.routes.draw do
+  resources:products
+  get "sesiones/index"
+  resources:users
+  resources:sesiones
+
+  match 'login' => 'sesiones#new', as: :login
+    match 'logout' => 'sesiones#destroy', as: :logout
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
