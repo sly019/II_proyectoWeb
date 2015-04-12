@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   resources:users
   resources:sesiones
 
-  match 'login' => 'sesiones#new', as: :login
-    match 'logout' => 'sesiones#destroy', as: :logout
+ # match 'login' => 'sesiones#new', as: :login
+  #  match 'logout' => 'sesiones#destroy', as: :logout
 
 
   # The priority is based upon order of creation: first created -> highest priority.
