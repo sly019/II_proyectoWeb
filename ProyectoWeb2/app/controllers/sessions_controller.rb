@@ -1,6 +1,14 @@
 class SessionsController < ApplicationController
   before_action :set_session, only: [:show, :edit, :update, :destroy]
 
+  after_filter :set_access_control_headers
+
+  def set_access_control_headers
+    headers['Access-Control-Allow-Origin'] = '*'
+    headers['Access-Control-Request-Method'] = '*'
+  end
+
+
   # GET /sessions
   # GET /sessions.json
   def index
@@ -25,29 +33,50 @@ class SessionsController < ApplicationController
   # POST /sessions.json
   def create
 
-    user = User.authenticate(params[:email], params[:password]) 
 
-    respond_to do |format|
-    if user  
-      session[:user_id] = user.id  
-      redirect_to root_url, :notice => "Logged in!"  
-    else  
-      format.html { render :new }
-      format.json { render json: @session.errors, status: :unprocessable_entity }  
-    end  
+@sessions = Session.all
+    #@user = User.authenticate(params[:username], params[:password])  
+    #if @user  
+      #session[:user_id] = user.id  
+     # render json: @user 
+    #else  
+     # flash.now.alert = "Invalid email or password"  
+      #render "new"  
+   # end  
+  #end  
 
-    #@session = Session.new(session_params)
 
-    #respond_to do |format|
-     # if @session.save
-      #  format.html { redirect_to @session, notice: 'Session was successfully created.' }
-       # format.json { render :show, status: :created, location: @session }
-     # else
-      #  format.html { render :new }
-       # format.json { render json: @session.errors, status: :unprocessable_entity }
-     # end
+    #user = User.authenticate(cliente_params) 
+    #if user
+
+      #@session = Session.new(session_params)
+      #respond_to do |format|
+      #if @session.save  
+
+
+        #format.html { redirect_to @session, notice: 'Session was successfully created.' }
+        #format.json { render :show, status: :created, location: @session }
+      #else  
+       # format.html { render :new }
+        #format.json { render json: @session.errors, status: :unprocessable_entity }  
+      #end
     #end
-  end
+    #else
+     # format.html { render :new }
+     # format.json { render json: @session.errors, status: :unprocessable_entity }   
+  #end
+end
+            #@session = Session.new(session_params)
+
+            #respond_to do |format|
+             # if @session.save
+              #  format.html { redirect_to @session, notice: 'Session was successfully created.' }
+               # format.json { render :show, status: :created, location: @session }
+             # else
+              #  format.html { render :new }
+               # format.json { render json: @session.errors, status: :unprocessable_entity }
+             # end
+            #end
 
   # PATCH/PUT /sessions/1
   # PATCH/PUT /sessions/1.json
@@ -82,5 +111,8 @@ class SessionsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def session_params
       params.require(:session).permit(:username, :token, :date)
+    end
+    def cliente_params
+      params.require(:form).permit(:username, :password)
     end
 end
