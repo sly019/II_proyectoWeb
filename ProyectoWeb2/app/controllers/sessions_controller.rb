@@ -1,18 +1,19 @@
 class SessionsController < ApplicationController
   before_action :set_session, only: [:show, :edit, :update, :destroy]
 
-  after_filter :set_access_control_headers
-
-  def set_access_control_headers
-    headers['Access-Control-Allow-Origin'] = '*'
-    headers['Access-Control-Request-Method'] = '*'
-  end
-
 
   # GET /sessions
   # GET /sessions.json
   def index
-    @sessions = Session.all
+    #@sessions = Session.all
+    @user = User.authenticate(cliente_params)  
+    if @user  
+      session[:user_id] = user.id  
+      render json: @user 
+    else  
+      flash.now.alert = "Invalid email or password"  
+      render "new"  
+    end
   end
 
   # GET /sessions/1
@@ -33,17 +34,7 @@ class SessionsController < ApplicationController
   # POST /sessions.json
   def create
 
-
-@sessions = Session.all
-    #@user = User.authenticate(params[:username], params[:password])  
-    #if @user  
-      #session[:user_id] = user.id  
-     # render json: @user 
-    #else  
-     # flash.now.alert = "Invalid email or password"  
-      #render "new"  
-   # end  
-  #end  
+    render text: 'hola'
 
 
     #user = User.authenticate(cliente_params) 

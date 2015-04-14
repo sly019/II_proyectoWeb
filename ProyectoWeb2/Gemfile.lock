@@ -108,6 +108,7 @@ GEM
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     rack (1.6.0)
+    rack-cors (0.3.1)
     rack-test (0.6.3)
       rack (>= 1.0)
     rails (4.2.1)
@@ -218,6 +219,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pry-rails
+  rack-cors
   rails (= 4.2.1)
   rake
   responders (= 2.1.0)
