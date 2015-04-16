@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   resources :products
   resources :sessions
   resources :users
+  #resources :tokens
+  resources :tokens,:only => [:create, :destroy] do
+  collection do
+      get 'users', :action => 'getUser'
+  end
+end
 
   #scope '/products' do
    # get '/' => 'products#index' 
