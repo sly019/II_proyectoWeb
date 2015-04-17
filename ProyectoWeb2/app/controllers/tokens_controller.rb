@@ -30,8 +30,14 @@ skip_before_filter :verify_authenticity_token
   	@demo = password = Digest::MD5.hexdigest(password)
   	if @user.password.to_s == @demo.to_s
   	 	if request.format != :json
+
+          length = 8  
+          token = rand(32**length).to_s(32)  
+          #user1 = User.new({'username' => username, 'password' => password, 'token' => token})
+          @user.update({'token' => token})
           render :json=> {:mensaje=> "Usuario coincide"}
           return
+
     	end
     else
   		render :json=> {:mensaje=> "tu usuario o password son incorrectos"}  
@@ -87,7 +93,6 @@ skip_before_filter :verify_authenticity_token
       user = current_user
       render :status=>200, :json=>{:user=>user}
   end
-
 
 
 
