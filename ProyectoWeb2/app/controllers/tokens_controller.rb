@@ -20,12 +20,24 @@ skip_before_filter :verify_authenticity_token
           return
       end
   
-      #buscamos el usuario por el email
-      #@user = User.find_username(username)
-      #@user = User.find(username)
-  	  #@user = find_by username: (username)
-  	  @user = User.where("username = ?", params[:username])  
-  	 
+      #buscamos el usuario por el usuario
+  	 @user = User.find_by_username(username)
+
+  	if @user.nil?
+      render :status=>401, :json=>{:message=>"tu usuario o password son incorrectos"}
+      return
+    end
+  	@demo = password = Digest::MD5.hexdigest(password)
+  	if @user.password.to_s == @demo.to_s
+  	 	if request.format != :json
+          render :json=> {:mensaje=> "Usuario coincide"}
+          return
+    	end
+    else
+  		render :json=> {:mensaje=> "tu usuario o password son incorrectos"}  
+  		return	
+  	end
+
       if @user && @user.password_hash == BCrypt::Engine.hash_secret(password, @user.password_salt)  
       user  
       else  

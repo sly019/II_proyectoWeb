@@ -65527,3 +65527,2651 @@ TypeError (no implicit conversion of nil into String):
   Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
   Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
   Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.9ms)
+DEPRECATION WARNING: Devise.token_authentication_key= is deprecated and has no effect. (called from token_authentication_key= at (eval):6)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 21:33:43 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE (username = 'demo')
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `password_hash' for #<User::ActiveRecord_Relation:0x00000005767208>):
+  app/controllers/tokens_controller.rb:29:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 21:34:44 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.5ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+
+NoMethodError (undefined method `password_hash' for #<User::ActiveRecord_Relation:0x0000000618bd10>):
+  app/controllers/tokens_controller.rb:29:in `create'
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:20:18 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:28: syntax error, unexpected =>, expecting keyword_end
+  	 :json=>{:message=> + "pureba"}
+  	        ^):
+  app/controllers/tokens_controller.rb:28: syntax error, unexpected =>, expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:21:49 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 406 Not Acceptable in 4ms (Views: 0.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:22:17 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:30:in `+'
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:22:35 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `password' for nil:NilClass):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:23:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:23:41 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:24:02 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `jsonS' for "demo":String):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:24:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `json' for "demo":String):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (38.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:24:32 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:30: syntax error, unexpected tLABEL
+          render :json=>{:mensaje=>"" + password:string}
+                                                 ^):
+  app/controllers/tokens_controller.rb:30: syntax error, unexpected tLABEL
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:24:58 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of User::ActiveRecord_Relation into String):
+  app/controllers/tokens_controller.rb:30:in `+'
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:25:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:25:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of User::ActiveRecord_Relation into String):
+  app/controllers/tokens_controller.rb:30:in `+'
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:35:19 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:35:20 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:35:53 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 5ms (Views: 0.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:36:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of Class into String):
+  app/controllers/tokens_controller.rb:30:in `+'
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:36:21 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:36:45 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:36:52 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:30:in `+'
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:37:04 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:37:18 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+
+NameError (undefined local variable or method `user' for #<TokensController:0x000000046158d8>):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:37:25 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (1.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+
+NameError (undefined local variable or method `user' for #<TokensController:0x00000005f5dc50>):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.2ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:37:41 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 200 OK in 4ms (Views: 0.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:37:56 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE (username = )[0m
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+
+NoMethodError (undefined method `password_hash' for #<User::ActiveRecord_Relation:0x00000004830d20>):
+  app/controllers/tokens_controller.rb:30:in `create'
+
+
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (username = )
+SQLite3::SQLException: near ")": syntax error: SELECT "users".* FROM "users" WHERE (username = )
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:39:25 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `find_username' for #<Class:0x00000006d64038>):
+  app/controllers/tokens_controller.rb:27:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:42:42 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `find_by_id' for #<TokensController:0x0000000646bf80>):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:42:59 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `find_by_id' for #<TokensController:0x00000006e7bd68>):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:43:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `find_by_id' for #<TokensController:0x000000068feea8>):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:44:15 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 76ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:44:34 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected tIVAR, expecting '}'
+          render :json=>{:mensaje=>"" @user.to_s + password}
+                                           ^
+/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected tIVAR, expecting '}'
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:45:28 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+          render :json=>{:mensaje=>"" user.to_s + password}
+                                          ^
+/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected '}', expecting keyword_end):
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected '}', expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:46:05 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+          render :json=> {:mensaje=>""  password }
+                                                ^):
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:46:13 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:46:25 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+          render :json=> {:mensaje=> @user.to_s  password }
+                                                         ^):
+  app/controllers/tokens_controller.rb:31: syntax error, unexpected tIDENTIFIER, expecting '}'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:46:40 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 9ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:00 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:02 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:08 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+Completed 200 OK in 16ms (Views: 0.4ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:14 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:15 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 3]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:16 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:21 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+Completed 200 OK in 18ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:26 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 5]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:27 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 5]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:47:34 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 17ms (Views: 0.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-16 22:47:47 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 511ms (Views: 510.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:48:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.1ms)
+
+NoMethodError (undefined method `Username' for #<User:0x00000005c08528>):
+  app/controllers/tokens_controller.rb:31:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:48:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `Username' for #<User:0x00000006e45060>):
+  app/controllers/tokens_controller.rb:31:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (16.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (46.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:48:34 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:48:56 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:49:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 1]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:00 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:02 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:02 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:03 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:03 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:18 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"re", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "re"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:19 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"re", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "re"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:52:23 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:53:54 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:53:55 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:54:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"a", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "a"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:54:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:55:04 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:55:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:55:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:55:55 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x000000045ba320>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:56:36 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x00000005d32700>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:56:38 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x00000006af1648>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:58:30 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:58:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:58:46 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 17ms (Views: 0.6ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:58:47 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:58:47 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:00 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 11ms (Views: 0.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:04 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:13 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:21 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:23 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:30 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:32 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:33 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:47 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:48 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:52 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 22:59:53 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:00 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:33 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:34 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:45 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 12ms (Views: 0.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:00:46 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:01:38 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `+@' for "demo":String):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:01:39 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `+@' for "demo":String):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (44.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:01:55 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `+@' for "password":String):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:08 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `+@' for "demo":String):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:20 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 16ms (Views: 0.6ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:26 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:27 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:27 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:33 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:28: syntax error, unexpected '}'):
+  app/controllers/tokens_controller.rb:28: syntax error, unexpected '}'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:41 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 14ms (Views: 0.6ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:02:50 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:03:24 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `password' for BCrypt::Engine:Class):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:03:42 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.4ms)
+
+ArgumentError (wrong number of arguments (1 for 2..3)):
+  app/controllers/tokens_controller.rb:28:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:04:46 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+ArgumentError (wrong number of arguments (1 for 2..3)):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:04:48 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+ArgumentError (wrong number of arguments (1 for 2..3)):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:04:51 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+ArgumentError (wrong number of arguments (1 for 2..3)):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:05:40 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:07:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `password=' for #<TokensController:0x00000008e753d0>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:07:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password=' for #<TokensController:0x00000006d67af8>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:07:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password=' for #<TokensController:0x0000000851dad0>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (40.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:07:58 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 17ms (Views: 1.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:08:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.9ms)
+
+NoMethodError (undefined method `password=' for #<TokensController:0x0000000866e1f0>):
+  app/controllers/tokens_controller.rb:25:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (23.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (56.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:08:13 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password=' for #<TokensController:0x000000060e8958>):
+  app/controllers/tokens_controller.rb:25:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (42.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:08:26 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:08:27 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:16 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:17 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:18 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:21 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:23 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:23 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:55 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:56 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:57 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:09:57 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:02 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:03 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:03 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:04 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:04 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:08 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:08 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:09 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:10 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:13 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:13 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:15 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:15 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:16 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:10:37 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:11:41 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:11:54 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/scaffolds.self-6c703978e66a6050b5c4fc5156cb504f15cb3a9e5144f6e3823bcbe0fcca453e.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/tokens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/tokens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:42 -0600
+
+
+Started GET "/users" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 57ms (Views: 56.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/products.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/scaffolds.self-6c703978e66a6050b5c4fc5156cb504f15cb3a9e5144f6e3823bcbe0fcca453e.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/tokens.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/users.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/products.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/tokens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/users.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-04-16 23:16:43 -0600
+
+
+Started GET "/users/new" for 127.0.0.1 at 2015-04-16 23:16:45 -0600
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (122.5ms)
+  Rendered users/new.html.erb within layouts/application (156.5ms)
+Completed 200 OK in 229ms (Views: 227.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2015-04-16 23:16:52 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lyygPpvcykDlOPJdTPYuulrWl1ilsZV/jcQtYe7KzsAQ+MVtUEEYwLEYe2c3rKJCeyF1A9hPz/NNR3TootNnxA==", "user"=>{"username"=>"deiber", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("username", "password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "deiber"], ["password", "93b2ee0c11e40770053c2cb1b3faff34"], ["created_at", "2015-04-17 05:16:52.183947"], ["updated_at", "2015-04-17 05:16:52.183947"]]
+  [1m[35m (176.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/users/12
+Completed 302 Found in 184ms (ActiveRecord: 177.1ms)
+
+
+Started GET "/users/12" for 127.0.0.1 at 2015-04-16 23:16:52 -0600
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 12]]
+  Rendered users/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:17:47 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "demo"]]
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `password' for #<TokensController:0x00000006b2e7c8>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:17:58 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"demo", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "demo"]]
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password' for #<TokensController:0x00000008456a98>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (41.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:18:11 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password' for #<TokensController:0x00000008280e08>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:18:28 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `password' for #<TokensController:0x0000000638a698>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (35.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:18:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `password' for #<TokensController:0x00000009dd8610>):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:19:05 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:21:26 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms)
+
+NoMethodError (undefined method `password' for "93b2ee0c11e40770053c2cb1b3faff34":String):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:21:30 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password' for "93b2ee0c11e40770053c2cb1b3faff34":String):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.3ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:21:42 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:22:25 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:33: syntax error, unexpected keyword_else, expecting keyword_end):
+  app/controllers/tokens_controller.rb:33: syntax error, unexpected keyword_else, expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.4ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:22:27 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:33: syntax error, unexpected keyword_else, expecting keyword_end):
+  app/controllers/tokens_controller.rb:33: syntax error, unexpected keyword_else, expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (28.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:22:47 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:22:51 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 3ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/tokens_controller.rb:37:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:24:43 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:89: syntax error, unexpected keyword_end, expecting end-of-input):
+  app/controllers/tokens_controller.rb:89: syntax error, unexpected keyword_end, expecting end-of-input
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:24:57 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 500 Internal Server Error in 16ms (Views: 0.5ms | ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x0000000664fea0>):
+  app/controllers/tokens_controller.rb:36:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:25:35 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.2ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x0000000a0ec5b8>):
+  app/controllers/tokens_controller.rb:34:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:25:37 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x00000008adec80>):
+  app/controllers/tokens_controller.rb:34:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.8ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:25:51 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.6ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x0000000a069230>):
+  app/controllers/tokens_controller.rb:35:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.5ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:07 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:88: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/tokens_controller.rb:88: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (29.6ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:16 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.4ms)
+
+NoMethodError (undefined method `password_hash' for #<User:0x00000009967b08>):
+  app/controllers/tokens_controller.rb:36:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:25 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 18ms (Views: 0.5ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:30 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:31 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:34 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberas", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiberas"]]
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+
+NoMethodError (undefined method `password' for nil:NilClass):
+  app/controllers/tokens_controller.rb:26:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:26:52 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:27:54 -0600
+
+SyntaxError (/home/sly-019/Escritorio/ProyectoWeb2/ProyectoWeb2/app/controllers/tokens_controller.rb:94: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/tokens_controller.rb:94: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.7ms)
+Cannot render console with content type multipart/form-dataAllowed content types: [#<Mime::Type:0x00000002a9ca98 @synonyms=["application/xhtml+xml"], @symbol=:html, @string="text/html">, #<Mime::Type:0x00000002a9c7c8 @synonyms=[], @symbol=:text, @string="text/plain">, #<Mime::Type:0x00000002a800f0 @synonyms=[], @symbol=:url_encoded_form, @string="application/x-www-form-urlencoded">]
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:28:17 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 16ms (Views: 0.5ms | ActiveRecord: 1.3ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:28:30 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 18ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:28:38 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberccc", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiberccc"]]
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:12 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberccc", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiberccc"]]
+Completed 401 Unauthorized in 6ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:15 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberccc", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiberccc"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:22 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberccc", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiberccc"]]
+Completed 401 Unauthorized in 10ms (Views: 0.5ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:23 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberccc", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiberccc"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:28 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberc", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiberc"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:40 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberc", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiberc"]]
+Completed 401 Unauthorized in 5ms (Views: 0.3ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:51 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiberc", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiberc"]]
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:54 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 10ms (Views: 0.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:29:58 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deibera"]]
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:25 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deibera"]]
+Completed 401 Unauthorized in 9ms (Views: 0.4ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:34 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deibera"]]
+Completed 401 Unauthorized in 8ms (Views: 0.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:40 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deibera"]]
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:45 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 7ms (Views: 0.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:55 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 15ms (Views: 0.3ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:57 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:30:59 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deibera"]]
+Completed 401 Unauthorized in 2ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:31:01 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deibera", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deibera"]]
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:31:06 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:31:07 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:31:27 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens" for 127.0.0.1 at 2015-04-16 23:31:33 -0600
+Processing by TokensController#create as */*
+  Parameters: {"username"=>"deiber", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "deiber"]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:32 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (26.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (56.9ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:35 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.9ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:35 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (30.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (40.3ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:35 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.8ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:35 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.7ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:36 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.1ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:36 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (31.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.5ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:36 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.7ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:37 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.7ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:38 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.2ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:32:38 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (32.2ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (19.8ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (40.7ms)
+
+
+Started POST "/tokens.json" for 127.0.0.1 at 2015-04-16 23:33:01 -0600
+Processing by TokensController#create as JSON
+  Parameters: {"user"=>{"username"=>"deiber", "password"=>"[FILTERED]", "token"=>""}}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+TypeError (no implicit conversion of nil into String):
+  app/controllers/tokens_controller.rb:12:in `+'
+  app/controllers/tokens_controller.rb:12:in `create'
+
+
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.0ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (20.7ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /home/sly-019/.rvm/gems/ruby-2.2.1/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (42.5ms)

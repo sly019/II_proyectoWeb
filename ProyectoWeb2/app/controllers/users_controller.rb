@@ -48,7 +48,7 @@ class UsersController < ApplicationController
 
     @user = User.authenticate(user_params)  
      #generamos el token y lo guardamos
-      @user.ensure_authentication_token!
+      #@user.ensure_authentication_token!
   
     if @user  
         respond_to do |format|
