@@ -5,15 +5,7 @@ class SessionsController < ApplicationController
   # GET /sessions
   # GET /sessions.json
   def index
-    #@sessions = Session.all
-    @user = User.authenticate(cliente_params)  
-    if @user  
-      session[:user_id] = user.id  
-      render json: @user 
-    else  
-      flash.now.alert = "Invalid email or password"  
-      render "new"  
-    end
+    @sessions = Session.all
   end
 
   # GET /sessions/1
