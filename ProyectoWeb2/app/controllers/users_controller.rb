@@ -44,6 +44,13 @@ class UsersController < ApplicationController
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json
   def update
+
+    @user = User.authenticate(params[:username], params[:password])  
+  
+    if @user
+     #generamos el token y lo guardamos
+     # @user.ensure_authentication_token!
+
     respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
@@ -53,6 +60,7 @@ class UsersController < ApplicationController
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
+  end
   end
 
   # DELETE /users/1

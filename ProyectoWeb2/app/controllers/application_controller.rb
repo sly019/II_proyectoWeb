@@ -3,7 +3,7 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
   #protect_from_forgery with: :exception
   
-  protect_from_forgery with: :null_session
+  #protect_from_forgery with: :null_session
   #caches_page :index, :show  
   #skip_before_filter :verify_authenticity_token, :only => [:index, :show]
   after_filter :set_access_control_headers
