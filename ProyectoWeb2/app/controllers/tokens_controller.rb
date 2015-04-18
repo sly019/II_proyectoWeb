@@ -47,7 +47,7 @@ skip_before_filter :verify_authenticity_token
           if @user.update({'username' => username, 'password' => password, 'token' => token})
             #ormat.html { redirect_to @user, notice: 'User was successfully created.' }
             #format.json { {'username' => username, 'password' => password, 'token' => token}}
-            render :json=> {:token=> token}
+            render :json=> {:token=> token,status: :ok}
           else
             format.html { render :new }
             format.json { render json: @user.errors, status: :unprocessable_entity }

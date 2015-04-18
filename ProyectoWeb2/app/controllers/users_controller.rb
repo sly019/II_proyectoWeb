@@ -51,7 +51,7 @@ class UsersController < ApplicationController
       #@user.ensure_authentication_token!
   
     #if @user  
-        respond_to do |format|
+    respond_to do |format|
       if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }

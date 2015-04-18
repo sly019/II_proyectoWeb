@@ -25,11 +25,14 @@
 	<input type="text" name="id_producto" id="id_producto" value="" placeholder="Type your nusername">
 	<button type="" id="send" onclick="load_producto(id_producto)">Producto</button>
 
+	<input type="text" id="id" name="" value="" placeholder="" required>
+
 	<form id="product" method="post">
-		<input type="text" name="product[nombre]" value="" placeholder="" required>
-		<input type="text" name="product[descripcion]" value="" placeholder="" required>
-		<input type="text" name="product[estado]" value="" placeholder="" required>
+		<input type="text" id="nombre" name="product[nombre]" value="" placeholder="" required>
+		<input type="text" id="descripcion" name="product[descripcion]" value="" placeholder="" required>
+		<input type="text" id="estado" name="product[estado]" value="" placeholder="" required>
 		<input type="submit" name="submit" id="submit" value="Crear Producto" >
+		<input type="submit" name="update" id="update" value="Actualizar Producto" >
 		<!--<button type="submit" id="send"</button>-->
 	</form>
 

@@ -3,13 +3,36 @@ class ProductsController < ApplicationController
 
   # GET /products
   # GET /products.json
+  
+   
+  def is_login(token) 
+    @user = User.find_by_token(token)
+    if @user
+      #@user
+    else
+      render :json=> {:messaje=> 'no esta logueado',status: :ok}
+    end
+  end
+
+
   def index
-    @products = Product.all
+    token = request.headers['token']
+    is_login(token)
+      @products = Product.all
+    #render :json=> {:token=> token,status: :ok}
+    #else
+    #render :json=> {:messaje=> 'no esta logueado',status: :ok}
+    #end  
+    #@products = Product.all
   end
 
   # GET /products/1
   # GET /products/1.json
   def show
+    token = request.headers['token']
+    if is_login(token)
+    else
+    end
   end
 
   # GET /products/new
@@ -25,9 +48,10 @@ class ProductsController < ApplicationController
   # POST /products.json
   def create
 #render plain: params
+  token = request.headers['token']
+  is_login(token)
 
     @product = Product.new(product_params)
-
     respond_to do |format|
       if @product.save
         format.html { redirect_to @product, notice: 'Product was successfully created.' }
@@ -42,6 +66,9 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
+    token = request.headers['token']
+    is_login(token)
+
     respond_to do |format|
       if @product.update(product_params)
         format.html { redirect_to @product, notice: 'Product was successfully updated.' }

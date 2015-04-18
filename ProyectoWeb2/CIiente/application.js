@@ -1,8 +1,11 @@
 function list_productos() {
 
+  var value = localStorage.getItem('token');
+
 	var request = $.ajax({ 
 	url: "http://localhost:3000/products.json",
-    method: "GET"});
+    method: "GET",
+    headers: {'token': value} });
 
 	request.done(function( msg ) {
 	  $('#result').val(JSON.stringify(msg));
@@ -16,9 +19,12 @@ function list_productos() {
 
 function load_producto(id_producto){
 
+  var value = localStorage.getItem('token');
+
 	var request = $.ajax({ 
 	url: "http://localhost:3000/products/"+ id_producto.value +".json",
-    method: "GET",//});
+    method: "GET",
+    headers: {'token': value},//});
     /*success: function(response){
     	$('#header').val(response.status_message);
     },*/
@@ -39,6 +45,10 @@ function load_producto(id_producto){
 
 	request.done(function( msg ) {
 	 	$('#result').val(JSON.stringify(msg));
+    $('#id').val(msg.id);
+    $('#nombre').val(msg.nombre);
+    $('#descripcion').val(msg.descripcion);
+    $('#estado').val(msg.estado);
 	  //$('#header').val();
 	})
 	 
@@ -113,20 +123,47 @@ function post_login() {
 
 $(document).ready(function(){
             $("#submit").click(function(){
+              var value = localStorage.getItem('token');
                 //alert('hola');
                 $.ajax({
                     url: 'http://localhost:3000/products.json',
                     type: 'POST',
+                    headers: {'token': value},
                     data: $('#product').serialize(),
                     success: function(msj){
                         //alert(msj);
-                        $('#result').val(JSON.stringify(msj));
+                        $('#result').val(JSON.stringify(msj));                      
                         //$('#mensaje_div').slideDown(5000); 
                         if(msj){
                         	jQuery.fn.reset = function(){
                         		$(this).each (function(){this.reset();})
                         	}
                         	$('#product').reset();
+                        }
+                    }
+                });
+                return false;
+            });      
+        });
+
+$(document).ready(function(){
+            $("#update").click(function(){
+              var value = localStorage.getItem('token');
+                //alert('hola');
+                $.ajax({
+                    url: 'http://localhost:3000/products/'+ $("#id").val() +'.json',
+                    type: 'PUT',
+                    headers: {'token': value},
+                    data: $('#product').serialize(),
+                    success: function(msj){
+                        //alert(msj);
+                        $('#result').val(JSON.stringify(msj));                      
+                        //$('#mensaje_div').slideDown(5000); 
+                        if(msj){
+                          jQuery.fn.reset = function(){
+                            $(this).each (function(){this.reset();})
+                          }
+                          $('#product').reset();
                         }
                     }
                 });
@@ -144,8 +181,10 @@ $(document).ready(function(){
                     success: function(msj){
                         //alert(msj);
                         $('#result').val(msj.token);
+                        $('#header').val(msj.status);
                         //$('#mensaje_div').slideDown(5000); 
                         localStorage.setItem('token',msj.token);
+
                         if(msj){
                           jQuery.fn.reset = function(){
                             $(this).each (function(){this.reset();})
