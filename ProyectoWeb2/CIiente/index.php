@@ -12,10 +12,12 @@
 </head>
 <body>
 	
-	<form id="form" action="" method="get">
+	<form id="login" action="" method="post">
 		<input type="text" name="username" value="" placeholder="Type your nusername">
 		<input type="password" name="password" value="" placeholder="Type your password">
-		<button type="submit" id="send" onclick="post_login()">loguearse </button>
+		<!--<input type="hidden" name="login[token]" value="x">-->
+		<input type="submit" name="send" id="send" value="loguearse" >
+		<!--<button type="submit" id="send" >loguearse </button>-->
 	</form>
 
 	<button type="" id="prueba" onclick="list_productos()">Lista_productos</button><br>
