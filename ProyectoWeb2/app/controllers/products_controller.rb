@@ -14,6 +14,15 @@ class ProductsController < ApplicationController
     end
   end
 
+  def is_login_post(token) 
+    @user = User.find_by_token(token)
+    if @user
+      @user
+    else
+      nil
+    end  
+  end
+
 
   def index
     token = request.headers['token']
@@ -49,17 +58,22 @@ class ProductsController < ApplicationController
   def create
 #render plain: params
   token = request.headers['token']
-  is_login(token)
+  #if is_login_post(token)
 
     @product = Product.new(product_params)
     respond_to do |format|
-      if @product.save
-        format.html { redirect_to @product, notice: 'Product was successfully created.' }
-        format.json { render :show, status: :created, location: @product }
+      if is_login_post(token)
+        if @product.save
+          format.html { redirect_to @product, notice: 'Product was successfully created.' }
+          format.json { render :show, status: :created, location: @product }
+        else
+          format.html { render :new }
+          format.json { render json: @product.errors, status: :unprocessable_entity }
+        end
       else
         format.html { render :new }
         format.json { render json: @product.errors, status: :unprocessable_entity }
-      end
+      end  
     end
   end
 
@@ -67,16 +81,21 @@ class ProductsController < ApplicationController
   # PATCH/PUT /products/1.json
   def update
     token = request.headers['token']
-    is_login(token)
+    #is_login(token)
 
     respond_to do |format|
-      if @product.update(product_params)
-        format.html { redirect_to @product, notice: 'Product was successfully updated.' }
-        format.json { render :show, status: :ok, location: @product }
+      if is_login_post(token)
+        if @product.update(product_params)
+          format.html { redirect_to @product, notice: 'Product was successfully updated.' }
+          format.json { render :show, status: :ok, location: @product }
+        else
+          format.html { render :edit }
+          format.json { render json: @product.errors, status: :unprocessable_entity }
+        end
       else
         format.html { render :edit }
         format.json { render json: @product.errors, status: :unprocessable_entity }
-      end
+      end  
     end
   end
 

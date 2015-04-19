@@ -11,6 +11,15 @@ class TransactionsController < ApplicationController
     end
   end
 
+  def is_login_post(token) 
+    @user = User.find_by_token(token)
+    if @user
+      @user
+    else
+      nil
+    end  
+  end
+
   # GET /transactions
   # GET /transactions.json
   
@@ -43,7 +52,7 @@ class TransactionsController < ApplicationController
     @transaction = Transaction.new(transaction_params)
 
     respond_to do |format|
-      if is_login(token)
+      if is_login_post(token)
         if @transaction.save
           format.html { redirect_to @transaction, notice: 'Transaction was successfully created.' }
           format.json { render :show, status: :created, location: @transaction }
