@@ -52,6 +52,7 @@
 		<input type="submit" name="submit" id="cambiar_producto" value="cambiar_producto" >
 		<!--<button type="submit" id="send"</button>-->
 		</form>
+		<hr>
 
 	<textarea style="width:1000px" rows="10" name="" id="result"></textarea>
 	<textarea style="width:1000px" rows="3" name="" id="header"></textarea>

@@ -294,7 +294,7 @@ $(document).ready(function(){
               var token = localStorage.getItem('token');
                 //alert('hola');
                 $.ajax({
-                    url: 'http://localhost:3000/users/logout',
+                    url: 'http://localhost:3000/users/logout.json',
                     type: 'GET',
                     headers: {'token': token},
                     success: function(msj){
