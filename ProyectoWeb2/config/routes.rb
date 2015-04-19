@@ -3,7 +3,11 @@ Rails.application.routes.draw do
   resources :usuarios
   resources :products
   resources :sessions
-  resources :users
+  resources :users do
+  collection do
+        get 'logout', :action => 'logout'
+    end
+  end  
   #get '/users/logout', to: 'users#logout'
   #resources :tokens
   resources :tokens,:only => [:create, :destroy, :update] do
