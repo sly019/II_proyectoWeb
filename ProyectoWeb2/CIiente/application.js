@@ -1,3 +1,24 @@
+ /* var value = localStorage.getItem('token');
+var request = $.ajax({ 
+
+
+  url: "http://localhost:3000/products.json",
+    method: "GET",
+    headers: {'token': value} });
+
+  request.done(function( msg ) {
+        var listItems= "";
+        for (var i = 0; i < msg.length; i++){
+          listItems+= "<option value='" + msg[i].id + "'>" + msg[i].id + " " + msg[i].nombre + "</option>";
+        }
+        $("#primero").html(listItems);
+        $("#segundo").html(listItems);
+  });
+   
+  request.fail(function( jqXHR, textStatus ) {
+    debugger;
+  });*/
+
 function list_productos() {
 
   var value = localStorage.getItem('token');
@@ -9,11 +30,36 @@ function list_productos() {
 
 	request.done(function( msg ) {
 	  $('#result').val(JSON.stringify(msg));
+        var listItems= "";
+        for (var i = 0; i < msg.length; i++){
+          listItems+= "<option value='" + msg[i].id + "'>" + msg[i].id + " " + msg[i].nombre + "</option>";
+        }
+        $("#primero").html(listItems);
+        $("#segundo").html(listItems);
 	});
 	 
 	request.fail(function( jqXHR, textStatus ) {
 	  debugger;
 	});
+}
+
+function lista_transacciones() {
+
+  var value = localStorage.getItem('token');
+
+  var request = $.ajax({ 
+  url: "http://localhost:3000/transactions.json",
+    method: "GET",
+    headers: {'token': value} });
+
+  request.done(function( msg ) {
+    $('#result').val(JSON.stringify(msg));
+
+  });
+   
+  request.fail(function( jqXHR, textStatus ) {
+    debugger;
+  });
 }
 
 
@@ -184,6 +230,8 @@ $(document).ready(function(){
                         $('#header').val(msj.status);
                         //$('#mensaje_div').slideDown(5000); 
                         localStorage.setItem('token',msj.token);
+                        localStorage.setItem('id',msj.id);
+                        //localStorage.setItem('password',msj.password);
 
                         if(msj){
                           jQuery.fn.reset = function(){
@@ -197,3 +245,67 @@ $(document).ready(function(){
             });      
         });
 
+
+
+
+$(document).ready(function(){
+            $("#cambiar_producto").click(function(){
+
+            $("#primero :selected").text();
+            var product_req_id = $("#primero").val();
+            $("#segundo :selected").text();
+            var product_offered_id = $("#segundo").val();
+            var value = localStorage.getItem('token');
+
+
+              //{"transaction":{"product_req_id":product_req_id, "product_offered_id":product_offered_id}}
+                //alert('hola');
+                $.ajax({
+                    url: 'http://localhost:3000/transactions.json',
+                    type: 'post',
+                    headers: {'token': value},
+                    //data: $('#transactions').serialize(),
+                    data: {"transaction":{"product_req_id":product_req_id, "product_offered_id":product_offered_id}},
+                    success: function(msj){
+                        //alert(msj);
+                        $('#result').val(JSON.stringify(msj)); 
+                        $('#header').val(msj.status);
+                        //$('#mensaje_div').slideDown(5000); 
+                        //localStorage.setItem('password',msj.password);
+
+                        if(msj){
+                          jQuery.fn.reset = function(){
+                            $(this).each (function(){this.reset();})
+                          }
+                          $('#transactions').reset();
+                        }
+                    }
+                });
+                return false;
+            });      
+        });
+
+
+
+$(document).ready(function(){
+            $("#log_out").click(function(){
+              var id = localStorage.getItem('id');
+              var password = localStorage.getItem('password');
+              var token = localStorage.getItem('token');
+                //alert('hola');
+                $.ajax({
+                    url: 'http://localhost:3000/users/logout',
+                    type: 'GET',
+                    headers: {'token': token},
+                    success: function(msj){
+                        //alert(msj);
+                        $('#result').val(JSON.stringify(msj)); 
+                        $('#header').val(msj.status);
+                        //$('#mensaje_div').slideDown(5000); 
+                        localStorage.removeItem('token');
+                        localStorage.removeItem('id');
+                    }
+                });
+                return false;
+            });      
+        });

@@ -28,6 +28,7 @@ class UsersController < ApplicationController
   def create
 
     @user = User.new(user_params)
+    @user.password = @user.encrypt_password
 
     respond_to do |format|
       if @user.save
@@ -50,9 +51,14 @@ class UsersController < ApplicationController
      #generamos el token y lo guardamos
       #@user.ensure_authentication_token!
   
-    #if @user  
+    #if @user
+    #@password = request.headers['password']
+    #@user = User.find_by_password(@password)                          
+    
     respond_to do |format|
-      if @user.update(user_params)
+      @token = ''
+      if @user.update({'token' => @token})
+      #if @user.update(user_params)
         format.html { redirect_to @user, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
@@ -65,6 +71,25 @@ class UsersController < ApplicationController
     #end
 
 
+  end
+
+  # GET    /users/logout
+  def logout
+
+    token = request.headers['token']
+    @user = User.find_by_token(token)
+
+    respond_to do |format|
+      @user.token = ''
+      if @user.update({'token' => @token})
+      #if @user.update(user_params)
+        format.html { redirect_to @user, notice: 'User was successfully updated.' }
+        format.json { render :show, status: :ok, location: @user }
+      else
+        format.html { render :edit }
+        format.json { render json: @user.errors, status: :unprocessable_entity }
+      end
+    end 
   end
 
   # DELETE /users/1

@@ -4,12 +4,13 @@ require 'digest/md5'
 class User < ActiveRecord::Base
    #users.password_hash in the database is a :string
     include BCrypt
-    before_save :encrypt_password 
+    #before_save :encrypt_password #, only: [:create] 
+    #before_update :update_user, only: [:update] 
     
           
       def encrypt_password  
 
-      if password.present?  
+      if password.present?
       #self.password = BCrypt::Engine.generate_salt  
       self.password = Digest::MD5.hexdigest(self.password)
       #self.password = MD5.new(self.password).to_s
@@ -17,6 +18,8 @@ class User < ActiveRecord::Base
       #self.password_hash = BCrypt::Engine.hash_secret(password, password_salt)  
       end  
       end 
+
+
 
       #def self.authenticate(username, password)  
       #user = find_by_username(username)  

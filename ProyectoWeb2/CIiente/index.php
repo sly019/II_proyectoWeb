@@ -19,8 +19,10 @@
 		<input type="submit" name="send" id="send" value="loguearse" >
 		<!--<button type="submit" id="send" >loguearse </button>-->
 	</form>
+	<input type="button" name="log_out" id="log_out" value="log_out" >
+	<hr>
 
-	<button type="" id="prueba" onclick="list_productos()">Lista_productos</button><br>
+	<button type="" id="prueba" onclick="list_productos()">Lista_productos y carga DropDownList para transacciones</button><br>
 
 	<input type="text" name="id_producto" id="id_producto" value="" placeholder="Type your nusername">
 	<button type="" id="send" onclick="load_producto(id_producto)">Producto</button>
@@ -35,6 +37,21 @@
 		<input type="submit" name="update" id="update" value="Actualizar Producto" >
 		<!--<button type="submit" id="send"</button>-->
 	</form>
+
+	<hr>
+		<button type="" id="lista_transacciones" onclick="lista_transacciones()">Lista_transacciones</button><br>
+
+		<form id="transaction" method="post">
+
+		<select id="primero">
+		</select>
+
+		<select id="segundo">
+		</select>
+		
+		<input type="submit" name="submit" id="cambiar_producto" value="cambiar_producto" >
+		<!--<button type="submit" id="send"</button>-->
+		</form>
 
 	<textarea style="width:1000px" rows="10" name="" id="result"></textarea>
 	<textarea style="width:1000px" rows="3" name="" id="header"></textarea>

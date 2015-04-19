@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  resources :transactions
   resources :usuarios
   resources :products
   resources :sessions
   resources :users
+  #get '/users/logout', to: 'users#logout'
   #resources :tokens
-  resources :tokens,:only => [:create, :destroy] do
+  resources :tokens,:only => [:create, :destroy, :update] do
   collection do
       get 'users', :action => 'getUser'
   end

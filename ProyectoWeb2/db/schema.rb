@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150417050443) do
+ActiveRecord::Schema.define(version: 20150419191742) do
 
   create_table "products", force: :cascade do |t|
     t.string   "nombre"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 20150417050443) do
     t.date     "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "transactions", force: :cascade do |t|
+    t.integer  "product_req_id"
+    t.integer  "product_offered_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "users", force: :cascade do |t|
